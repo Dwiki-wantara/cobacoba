@@ -1,0 +1,69 @@
+<html>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/styles/contact.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="assets/js/contact.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="" style="width: 40px; display: flex; align-items: center; margin-right: 35px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="navRightList">
+              <li>
+                  <a href="contact.html" class="contactMe">Contact Me</a>
+              </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="headContent">
+        <h1 class="title">GET IN TOUCH</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="name" class="form-control" id="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="email" class="form-control" id="phone" placeholder="+62 8211 9576 xxx">
+            </div>
+            <div class="form-group form_element">
+                <label for="Subject">Subject</label>
+                <select name="" id="select" style="cursor: pointer;">
+                    <option value="select your agency" hidden>Select your agency</option>
+                    <option value="Polri">POLRI</option>
+                    <option value="TNI">TNI</option>
+                    <option value="PNS">PNS</option>
+                </select>
+            </div>
+            
+            <div class="form-group form_element">
+                <label for="message">Your Message</label>
+                <textarea name="" id="message" cols="15" rows="5" placeholder="Description" style="resize: none; padding-left: 10px;"></textarea >
+            </div>
+            <div class="button">
+                <button type="button" class="button-submit" onclick="buttonSubmit()">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
